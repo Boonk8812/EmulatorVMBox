@@ -1,0 +1,21 @@
+# runs-on: "ubuntu-latest"
+  {
+ {
+   ubuntu: 
+ - linux:
+ - windows:
+ - macos:
+  }
+
+  format$information:("#0b772f00bacfd3529") resources: 
+  formatting:
+  format$information:("#0bbfa81bbfc501937") info: 
+  
+  
+  { 
+  formatting:
+   ^# yml
+    # YML
+    0b000000000000f = %yml%obfuscated
+  }
+   }
