@@ -62,7 +62,7 @@ pushMove();
 //////////////////////////// JavaSE GUI Enviorment
 //////////////////////////// Version: JavaSE GUI Enviorment Beta 0.0.0_0.00
 //////////////////////////// Build: 0.00 (NOTE: The 0.00 string on the Beta text string above matches the build 
-/////////////////////////////////////////////////////////////////////// because it is the actual build string.)
+//////////////////////////// because it is the actual build string.)
 
 java.env.sunUtils();
 diskutil.java();
@@ -118,4 +118,35 @@ int main() {
 
 
 
-}
+};
+
+
+
+
+   VMEmulatorBoxCore(); {
+
+class ImportLanguage
+        package com.bytetech.emulators.vmemulatorbox():
+
+!class uint_16;
+           uint_32();
+// Types
+   }        
+           {bit_2048, matchedBit= uint_32}
+           {uint_16, uint_8};
+           {uint_32: integer= uint_32, uint_8};
+           {uint_bit, bit_16};
+           {bit_256, int_128};
+           {bit_512, int_645};
+           {bit_1024, int_925};
+           {bit_2048, int_246};
+
+           {
+                   // .. bit_2048 is matched to uint_32 because of the integer 
+           import sun.java.utils();
+           import sun.java.utils.deviceInteractions(); 
+                   // Java DeviceIntegrations are to interact with certain componets of the host computer running the app.
+
+                   "%writetoDiskVMFileDirectory":"C:\Program Files (x86)\VMEmulatorBox\VMs"
+                   
+   }     
