@@ -78,7 +78,7 @@ diskutil.java();
 function AddMayo(input) { 
 
 }
-          &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&0x0000002b1&###
+          &,"hex"="0x0000002b1",&###
             .######CALLE_ID
             .######HEX_STRINGIMPL;
           ^0 x fff18 = 99992b
@@ -131,8 +131,8 @@ class ImportLanguage
 !class uint_16;
            uint_32();
 // Types
-   }        
-           {bit_2048, matchedBit= uint_32}
+         
+           {bit_2048, matchedBit= uint_32};
            {uint_16, uint_8};
            {uint_32: integer= uint_32, uint_8};
            {uint_bit, bit_16};
@@ -148,5 +148,83 @@ class ImportLanguage
                    // Java DeviceIntegrations are to interact with certain componets of the host computer running the app.
 
                    "%writetoDiskVMFileDirectory":"C:\Program Files (x86)\VMEmulatorBox\VMs"
+
+                           #include <'/bin/.net_dir/{0cabfecdf2803-30304-294abfcefd290}'>
+                           #include <'/bin'>
+                           #include <'/scripts'>
+                           #include <'/bin/.net_dir'>
+                           
+var UUIDCollisionPrevention() {
+                              
+if (VMDiskUUID, matchesSameDisk/otherVM(),"OnPowerOn.ACPIStateVM.setStateFrom('LOADING_VM'),To,('SUSPENDED_ABORTED'),: reportErrors/Warnings >> vmLog.txt"
+    using System;
+using System.IO;
+
+public class VMHardDiskVerifier
+{
+    public void VerifyHardDisk(string oldVMHardDiskUUID, string newVMHardDiskUUID)
+    {
+        if (oldVMHardDiskUUID != newVMHardDiskUUID)
+        {
+            // Shut down the running virtual machine in EmulatorVMBox
+            ShutDownVirtualMachine();
+
+            // Report errors to the "EmulatorVMBox/VMLogs/vmLog.txt" directory
+            ReportErrors();
+
+            // Create a file with a number if the file names are duplicated
+            CreateLogFile();
+        }
+    }
+
+    private void ShutDownVirtualMachine()
+    {
+        // Code to shut down the running virtual machine
+    }
+
+    private void ReportErrors()
+    {
+        string logFilePath = "EmulatorVMBox/VMLogs/vmLog.txt";
+
+        // Code to report errors to the log file
+        // Append error code and text for each error or warning
+        // Example: File.AppendAllText(logFilePath, "Error Code: 001, Error Text: Disk UUID mismatch");
+    }
+
+    private void CreateLogFile()
+    {
+        string logFilePath = "EmulatorVMBox/VMLogs/vmLog.txt";
+
+        // Check if the log file already exists
+        if (File.Exists(logFilePath))
+        {
+            // Find the next available file name by appending a number
+            int fileNumber = 1;
+            string newLogFilePath = logFilePath;
+
+            while (File.Exists(newLogFilePath))
+            {
+                newLogFilePath = $"{Path.GetFileNameWithoutExtension(logFilePath)}_{fileNumber}{Path.GetExtension(logFilePath)}";
+                fileNumber++;
+            }
+
+            // Create the new log file
+            File.Create(newLogFilePath);
+        }
+        else
+        {
+            // Create the log file
+            File.Create(logFilePath);
+        }
+    }
+}
+
+   
+   
+)                            
+                           
+}
+                           
                    
    }     
+}
