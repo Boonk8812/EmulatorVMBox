@@ -1,6 +1,6 @@
-public private void Code() 
-{
-#include <iostream>
+public private void Code {
+
+     #include <iostream>
 #include <stdio.h>
 public class ProgramCode();
 {
@@ -16,7 +16,6 @@ class Program();
  @[Program]:
  #include <app.yml>
  #include </scripts>
-{
 }
   public async Task; 
    > :: Task 
@@ -118,7 +117,7 @@ int main() {
 
 
 
-};
+
 
 
 
@@ -227,4 +226,53 @@ public class VMHardDiskVerifier
                            
                    
    }     
+   }
+
+// app.cs
+
+using System;
+using System.Windows.Forms;
+
+namespace MyApp
+{
+    public class App
+    {
+        private Button startEmulatorButton;
+
+        public App()
+        {
+            InitializeComponents();
+        }
+
+        private void InitializeComponents()
+        {
+            // Create the Start Android emulator button
+            startEmulatorButton = new Button();
+            startEmulatorButton.Text = "Start Android emulator";
+            startEmulatorButton.Click += StartEmulatorButton_Click;
+
+            // Add the button to the virtual machine list
+            // Assuming the virtual machine list is a ListBox control named vmList
+            vmList.Controls.Add(startEmulatorButton);
+        }
+
+        private void StartEmulatorButton_Click(object sender, EventArgs e)
+        {
+            // Run the Android6.0Emulator.java script
+            string emulatorScriptPath = "bin/emulators/Android6.0Emulator.java";
+            RunScript(emulatorScriptPath);
+        }
+
+        private void RunScript(string scriptPath)
+        {
+            Process.Start(startEmulator);
+        }
+    }
+}
+
+
+
+
+        
+        
 }
