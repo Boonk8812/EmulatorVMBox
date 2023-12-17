@@ -60,6 +60,82 @@ int main(int argc, char *argv[])
     return 0;
 }
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// Function to read the SCREEN_RESOLUTION from SETTINGS.INI file
+char* readScreenResolution() {
+    FILE* settingsFile = fopen("SETTINGS.INI", "r");
+    char* resolution = NULL;
+    char line[100];
+
+    if (settingsFile != NULL) {
+        while (fgets(line, sizeof(line), settingsFile) != NULL) {
+            if (strstr(line, "SCREEN_RESOLUTION") != NULL) {
+                strtok(line, "=");
+                resolution = strtok(NULL, "=");
+                break;
+            }
+        }
+        fclose(settingsFile);
+    }
+
+    return resolution;
+}
+
+// Function to display the VM screen
+void displayVMScreen() {
+    char* screenResolution = readScreenResolution();
+
+    if (screenResolution != NULL) {
+        // Code to display the VM screen based on the screenResolution
+        printf("Displaying VM screen with resolution: %s\n", screenResolution);
+    } else {
+        printf("Error: Failed to read SCREEN_RESOLUTION from SETTINGS.INI\n");
+    }
+}
+
+// Function to show vCPU activity
+void showvCPUActivity() {
+    // Code to show vCPU activity
+    printf("vCPU activity: ...\n");
+}
+
+// Function to show vDISK activity
+void showvDISKActivity() {
+    // Code to show vDISK activity
+    printf("vDISK activity: ...\n");
+}
+
+// Function to show vRAM activity
+void showvRAMActivity() {
+    // Code to show vRAM activity
+    printf("vRAM activity: ...\n");
+}
+
+// Function to show vWifi/Network activity
+void showvWifiNetworkActivity() {
+    // Code to show vWifi/Network activity
+    printf("vWifi/Network activity: ...\n");
+}
+
+// Function to show Virtual Video RAM activity
+void showVirtualVideoRAMActivity() {
+    // Code to show Virtual Video RAM activity
+    printf("Virtual Video RAM activity: ...\n");
+}
+
+int main() {
+    displayVMScreen();
+    showvCPUActivity();
+    showvDISKActivity();
+    showvRAMActivity();
+    showvWifiNetworkActivity();
+    showVirtualVideoRAMActivity();
+
+    return 0;
+}
 
   
 }
